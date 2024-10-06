@@ -4,7 +4,7 @@ from PIL import Image
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
 with col1:
-    st.image("HelioSystem/imagesheliosystem.png") #, width=1250
+    st.image("HelioSystem/images/heliosystem.png") #, width=1250
 with col2:
     BackIsClicked = st.button("Back", use_container_width=True)
 if BackIsClicked:
@@ -22,11 +22,12 @@ astronomy enthusiasts alike.
 """)
  
 st.header("The Team")
-st.image("HelioSystem/imagesNoel.jpeg", width=200, caption="Noël Santiago Briand: French, born 5th May 2011. Coder, Designer")
-st.image("HelioSystem/imagesEric.jpeg", width=200, caption="Eric Haber Florencio: Brazilian, born in the U.S.A. 18th October 2010. Coder, Designer")
-st.image("HelioSystem/imagesLilian.jpeg", width=200, caption="Lilian Tillie Ronzon: French, born 8th November 2011. Coder, Presenter")
-st.image("HelioSystem/imagesPablo.jpeg", width=200, caption="Pablo Almagro González: Spanish, born in China 11th July 2010. Designer, Coder and Organizer")
-st.image("HelioSystem/imagesAndrew.jpeg", width=200, caption="Andrés Almagro González: Spanish, born in China 12th December 2011. Designer, Presenter")
+st.image("HelioSystem/images/Noel.jpeg", width=200, caption="Noël Santiago Briand: French, born 5th May 2011. Coder, Designer")
+st.image("HelioSystem/images/Eric.jpeg", width=200, caption="Eric Haber Florencio: Brazilian, born in the U.S.A. 18th October 2010. Coder, Designer")
+st.image("HelioSystem/images/Lilian.jpeg", width=200, caption="Lilian Tillie Ronzon: French, born 8th November 2011. Coder, Presenter")
+st.image("HelioSystem/images/Pablo.jpeg", width=200, caption="Pablo Almagro González: Spanish, born in China 11th July 2010. Designer, Coder and Organizer")
+st.image("HelioSystem/images/Andrew.jpeg", width=200, caption="Andrés Almagro González: Spanish, born in China 12th December 2011. Designer, Presenter
+st.image("HelioSystem/images/Baltasar.jpeg", width=200, caption="Baltasar García Machado: Spanish, born 10th January 2011. Presenter")
  
 st.header("Sources")
 st.subheader("AI chatbot")
