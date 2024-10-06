@@ -7,8 +7,16 @@ ephem
 requests
 
 # VTK and related libraries
+pillow
+imageio
+pooch
+scooby
+cmocean
+colorcet
+meshio
 vtk
 pyvista
+vtk.modules  # Only if required, but generally not necessary
 stpyvista
 geovista
 trame
