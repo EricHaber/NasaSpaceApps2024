@@ -21,3 +21,5 @@ trame-components
 trame-server
 trame-vtk
 trame-vuetify
+vtkmodules
+vtkmodules.vtkInteractionWidgets[vtkBoxWidget]
