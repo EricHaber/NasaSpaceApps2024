@@ -9,7 +9,7 @@ requests
 # VTK and related libraries
 vtk
 pyvista
-vtkmodules  # Only if required, but generally not necessary
+vtk.modules  # Only if required, but generally not necessary
 stpyvista
 geovista
 trame
