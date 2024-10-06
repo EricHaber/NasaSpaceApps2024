@@ -10,9 +10,10 @@ import ephem
 import numpy as np
 import pyvista as pv
 from datetime import datetime, timedelta
-import panel
+import panel as pn
 from pyvista import examples
-
+pyvista.global_theme.use_panel = True
+pn.extension('vtk')
  
 
 
