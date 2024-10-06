@@ -16,7 +16,6 @@ colorcet
 meshio
 vtk
 pyvista
-vtk.modules  # Only if required, but generally not necessary
 stpyvista
 trame
 trame-client
