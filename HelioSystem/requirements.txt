@@ -16,7 +16,7 @@ cmocean
 colorcet
 meshio
 pyvista
-stpyvista
+stpyvista>=0.1.0
 trame
 trame-client
 trame-components
