@@ -3,11 +3,11 @@ import numpy as np
 import random
 import time
 from openai import OpenAI
-import openai
 
 
-openai.api_key = st.secrets["API_KEY"]
-client = OpenAI()
+
+client = OpenAI(organization=st.secrets["organization"],
+  project=st.secrets["project"])
 
 
 
