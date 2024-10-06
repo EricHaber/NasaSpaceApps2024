@@ -4,9 +4,7 @@ import random
 import time
 import openai
 from openai import OpenAI
-import pyvista as pv
-from pyvista import examples
-from stpyvista import stpyvista
+
 
 
 client = OpenAI(api_key = st.secrets["API_KEY"])
