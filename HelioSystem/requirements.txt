@@ -1,4 +1,5 @@
 pip
+mesa3d
 numpy
 streamlit
 openai
