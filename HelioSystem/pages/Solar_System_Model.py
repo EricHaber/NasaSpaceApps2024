@@ -5,13 +5,12 @@ import time
 from openai import OpenAI
 import pyvista as pv
 
-import stpyvista
+from panel import show
 import ephem
 import numpy as np
 import pyvista as pv
 from datetime import datetime, timedelta
 import panel as pn
-from pyvista import examples
 pyvista.global_theme.use_panel = True
 pn.extension('vtk')
  
@@ -274,16 +273,16 @@ def visualize_planet_positions_and_orbits(positions, planet_colors):
 
     inner = 0.7 + 0.1
     outer = 0.7 + 0.75
-    sun = examples.planets.load_sun(radius=0.3)
-    saturn_rings = examples.planets.load_saturn_rings(inner=inner, outer=outer, c_res=50)
-    mercury = examples.planets.load_mercury(radius=0.03)
-    venus = examples.planets.load_venus(radius=0.075)
-    earth = examples.planets.load_earth(radius=0.08)
-    mars = examples.planets.load_mars(radius=0.04125)
-    jupiter = examples.planets.load_jupiter(radius=0.8375)
-    saturn = examples.planets.load_saturn(radius=0.7)
-    uranus = examples.planets.load_uranus(radius=0.675)
-    neptune = examples.planets.load_neptune(radius=0.675)
+    sun = pv.examples.planets.load_sun(radius=0.3)
+    saturn_rings = pv.examples.planets.load_saturn_rings(inner=inner, outer=outer, c_res=50)
+    mercury = pv.examples.planets.load_mercury(radius=0.03)
+    venus = pv.examples.planets.load_venus(radius=0.075)
+    earth = pv.examples.planets.load_earth(radius=0.08)
+    mars = pv.examples.planets.load_mars(radius=0.04125)
+    jupiter = pv.examples.planets.load_jupiter(radius=0.8375)
+    saturn = pv.examples.planets.load_saturn(radius=0.7)
+    uranus = pv.examples.planets.load_uranus(radius=0.675)
+    neptune = pv.examples.planets.load_neptune(radius=0.675)
     planets = ["Sun", "Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
     planetsMesh = [sun, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune]
     # Add planets to Plotter.
@@ -293,7 +292,7 @@ def visualize_planet_positions_and_orbits(positions, planet_colors):
             plotter.add_mesh(planetsMesh[i].translate(positions[planets[i]]), name=planets[i],color=planet_colors[planets[i]], smooth_shading=True)
         else:
             plotter.add_mesh(planetsMesh[i].translate(positions[planets[i]]), name=planets[i],texture=planet_colors[planets[i]], smooth_shading=True)
-    plotter.add_mesh(saturn_rings.translate(positions['Saturn']), texture=examples.planets.download_saturn_rings(texture=True), smooth_shading=True)
+    plotter.add_mesh(saturn_rings.translate(positions['Saturn']), texture=pv.examples.planets.download_saturn_rings(texture=True), smooth_shading=True)
     plotter.add_mesh(pv.Sphere(radius=planet_sizes['Ceres']).translate(positions['Ceres']), color=planet_colors['Ceres'], smooth_shading=True)
     plotter.add_mesh(pv.Sphere(radius=planet_sizes['Pallas']).translate(positions['Pallas']), color=planet_colors['Pallas'], smooth_shading=True)
     plotter.add_mesh(pv.Sphere(radius=planet_sizes['Vesta']).translate(positions['Vesta']), color=planet_colors['Vesta'], smooth_shading=True)
@@ -349,7 +348,7 @@ def visualize_planet_positions_and_orbits(positions, planet_colors):
     plotter.reset_camera()
 
     # Show the plot
-    stpyvista(plotter)
+    show(plotter)
 
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
@@ -369,15 +368,15 @@ d = f"{year}/{week//4.18}/{week%4.18}"
 
 col1, col2, col3, col4, col5 = st.columns([1,1,1,1,1])
 planet_colors = {
-    'Sun': examples.planets.download_sun_surface(texture=True),
-    'Mercury': examples.planets.download_mercury_surface(texture=True),
-    'Venus': examples.planets.download_venus_surface(texture=True),
-    'Earth': examples.load_globe_texture(),
-    'Mars': examples.planets.download_mars_surface(texture=True),
-    'Jupiter': examples.planets.download_jupiter_surface(texture=True),
-    'Saturn': examples.planets.download_saturn_surface(texture=True), #(0, 255, 0), 
-    'Uranus': examples.planets.download_uranus_surface(texture=True),
-    'Neptune': examples.planets.download_neptune_surface(texture=True),
+    'Sun': pv.examples.planets.download_sun_surface(texture=True),
+    'Mercury': pv.examples.planets.download_mercury_surface(texture=True),
+    'Venus': pv.examples.planets.download_venus_surface(texture=True),
+    'Earth': pv.examples.load_globe_texture(),
+    'Mars': pv.examples.planets.download_mars_surface(texture=True),
+    'Jupiter': pv.examples.planets.download_jupiter_surface(texture=True),
+    'Saturn': pv.examples.planets.download_saturn_surface(texture=True), #(0, 255, 0), 
+    'Uranus': pv.examples.planets.download_uranus_surface(texture=True),
+    'Neptune': pv.examples.planets.download_neptune_surface(texture=True),
     'Ceres': (255, 50, 50),
     'Pallas': (255, 50, 50),
     'Vesta': (255, 50, 50),
