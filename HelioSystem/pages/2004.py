@@ -9,8 +9,8 @@ from pyvista import examples
 from stpyvista import stpyvista
 
 
+client = OpenAI(api_key = st.secrets["API_KEY"])
 
-client = OpenAI()
 
 
 
