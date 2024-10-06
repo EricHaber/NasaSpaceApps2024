@@ -2,3 +2,4 @@ pyvista
 openai
 stpyvista
 ephem
+vtk
