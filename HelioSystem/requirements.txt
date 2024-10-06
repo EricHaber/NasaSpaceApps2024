@@ -4,6 +4,7 @@ streamlit
 openai
 ephem
 vtk>=9.1.0
+vtk[vtkInteractionWidgets]
 numpy
 matplotlib
 panel>=1.4.1
