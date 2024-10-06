@@ -4,14 +4,16 @@ import random
 import time
 from openai import OpenAI
 import pyvista as pv
-from pyvista import examples
+
 from stpyvista import stpyvista
 import ephem
 import numpy as np
 import pyvista as pv
 from datetime import datetime, timedelta
-pv.global_theme.interactive = True
-
+import panel
+from pyvista import examples
+pyvista.global_theme.use_panel = True
+ 
 
 
 # Function to convert celestial coordinates (RA, DEC) to 3D cartesian coordinates
