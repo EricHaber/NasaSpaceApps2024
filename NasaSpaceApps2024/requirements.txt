@@ -1,5 +1,0 @@
-openai
-pyvista
-stpyvista
-ephem
-datetime
