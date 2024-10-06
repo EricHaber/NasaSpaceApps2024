@@ -312,7 +312,7 @@ def visualize_planet_positions_and_orbits(positions, planet_colors):
         'Venus': 0.0068,
         'Earth': 0.0167,
         'Mars': 0.00934,
-        'Jupiter': 0.0489,
+        'Jupiter': 0.00489,
         'Saturn': 0.0538,
         'Uranus': 0.00472,
         'Neptune': 0.0086,
