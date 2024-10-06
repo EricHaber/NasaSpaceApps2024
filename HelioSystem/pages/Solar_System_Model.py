@@ -5,7 +5,7 @@ import time
 from openai import OpenAI
 import pyvista as pv
 
-from stpyvista import stpyvista
+import stpyvista
 import ephem
 import numpy as np
 import pyvista as pv
