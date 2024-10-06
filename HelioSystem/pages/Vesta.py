@@ -9,7 +9,7 @@ from stpyvista import stpyvista
 
 
 
-client = OpenAI()
+client = OpenAI(api_key = st.secrets["API_KEY"])
 
 
 
