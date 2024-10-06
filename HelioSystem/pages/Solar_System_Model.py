@@ -11,7 +11,6 @@ import numpy as np
 import pyvista as pv
 from datetime import datetime, timedelta
 import panel
-pyvista.global_theme.use_panel = True
 from pyvista import examples
 
  
