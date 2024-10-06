@@ -3,9 +3,7 @@ import numpy as np
 import random
 import time
 from openai import OpenAI
-import pyvista as pv
-from pyvista import examples
-from stpyvista import stpyvista
+
 
 
 
@@ -57,7 +55,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 
-st.image("HelioSystem/imagesEros.webp", width = 750)
+st.image("HelioSystem/images/Eros.webp", width = 750)
 
 
 with st.chat_message("assistant"):
