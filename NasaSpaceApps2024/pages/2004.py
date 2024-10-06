@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import random
 import time
+immport openai
 from openai import OpenAI
 import pyvista as pv
 from pyvista import examples
