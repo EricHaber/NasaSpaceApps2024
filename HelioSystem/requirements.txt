@@ -32,3 +32,5 @@ param
 colorcet
 cmocean
 panel
+
+pip freeze pyvista
