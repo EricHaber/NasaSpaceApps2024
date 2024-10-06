@@ -13,7 +13,7 @@ stpyvista
 geovista
 colorcet
 requests
-cmocean>=4.0.3
+cmocean
 trame
 trame-client
 trame-components
