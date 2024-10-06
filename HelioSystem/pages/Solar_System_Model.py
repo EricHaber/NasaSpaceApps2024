@@ -223,25 +223,25 @@ def visualize_planet_positions_and_orbits(positions, planet_colors):
     plotter.set_background("black")
     # Orbits radii (for visualization purposes)
     orbit_radii = {
-        'Mercury': 0.4,
-        'Venus': 0.7,
-        'Earth': 1,
-        'Mars': 1.5,
-        'Jupiter': 5,
-        'Saturn': 9,
-        'Uranus': 19,
-        'Neptune': 30,
-        'Ceres': 2.766,
-        'Pallas': 2.772,
-        'Vesta': 2.361,
-        'Hygiea': 3.180,
-        'Eros': 1.458,
-        'Itokawa': 1.225,
-        'Bennu': 1.123,
-        '2002 AA69': 0.983,
-        '2004 BL86': 1.057,
-        '2014 UR116': 1.017,
-        'Halley\'s comet': 17.834
+        'Mercury': 474.8,
+        'Venus': 858.71,
+        'Earth': 1226.73,
+        'Mars': 1840.09,
+        'Jupiter': 6133.66,
+        'Saturn': 11000,
+        'Uranus': 24500,
+        'Neptune': 336801,
+        'Ceres': 3397.77,
+        'Pallas': 3402.67,
+        'Vesta': 2896.07,
+        'Hygiea': 3900.68,
+        'Eros': 1790.88,
+        'Itokawa': 1502.62,
+        'Bennu': 1377.51,
+        '2002 AA69': 1205.78,
+        '2004 BL86': 1296.55,
+        '2014 UR116': 1247.48,
+        'Halley\'s comet': 21323.74
     }
 
     # Planet sizes: smaller for inner planets, bigger for outer planets
@@ -273,7 +273,7 @@ def visualize_planet_positions_and_orbits(positions, planet_colors):
 
     inner = 0.7 + 0.1
     outer = 0.7 + 0.75
-    sun = examples.planets.load_sun(radius=0.3)
+    sun = examples.planets.load_sun(radius=5.71)
     saturn_rings = examples.planets.load_saturn_rings(inner=inner, outer=outer, c_res=50)
     mercury = examples.planets.load_mercury(radius=0.03)
     venus = examples.planets.load_venus(radius=0.075)
