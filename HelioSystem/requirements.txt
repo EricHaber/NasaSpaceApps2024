@@ -1,6 +1,5 @@
 pip
 streamlit
-pyvista
 openai
 ephem
 vtk
