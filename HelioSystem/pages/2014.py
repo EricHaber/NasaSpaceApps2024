@@ -55,7 +55,7 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 
-st.image("HelioSystem/images2014.jpeg", width = 750)
+st.image("HelioSystem/images/2014.jpeg", width = 750)
 
 
 with st.chat_message("assistant"):
