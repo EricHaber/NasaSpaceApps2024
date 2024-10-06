@@ -4,4 +4,3 @@ stpyvista
 ephem
 vtk
 trame-vtk
-vtkmodules
