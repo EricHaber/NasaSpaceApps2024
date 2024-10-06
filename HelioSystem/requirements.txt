@@ -1,5 +1,5 @@
 pip
-mesa3d
+libgl
 numpy
 streamlit
 openai
