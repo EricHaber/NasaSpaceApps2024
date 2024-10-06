@@ -18,7 +18,6 @@ vtk
 pyvista
 vtk.modules  # Only if required, but generally not necessary
 stpyvista
-geovista
 trame
 trame-client
 trame-components
@@ -29,8 +28,13 @@ trame-vuetify
 # Visualization libraries
 bokeh
 param
+geovista
 colorcet
-cmocean
-panel
-
-pip freeze pyvista
+requests
+cmocean>=4.0.3
+trame
+trame-client
+trame-components
+trame-server
+trame-vtk
+trame-vuetify
