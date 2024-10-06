@@ -1,25 +1,27 @@
-pip
-vtkmodules
+# Core libraries
 numpy
+matplotlib
 streamlit
 openai
 ephem
+requests
+
+# VTK and related libraries
 vtk
-numpy
-matplotlib
-bokeh
-param
 pyvista
+vtkmodules  # Only if required, but generally not necessary
 stpyvista
 geovista
-colorcet
-requests
-cmocean
 trame
 trame-client
 trame-components
 trame-server
 trame-vtk
 trame-vuetify
+
+# Visualization libraries
+bokeh
+param
+colorcet
+cmocean
 panel
- 
