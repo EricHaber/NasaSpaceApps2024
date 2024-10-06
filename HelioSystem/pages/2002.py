@@ -7,7 +7,7 @@ from openai import OpenAI
 
 
 client = OpenAI(organization=st.secrets["organization"],
-  project=st.secrets["project"])
+                project=st.secrets["project"],)
 
 
 
