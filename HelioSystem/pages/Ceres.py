@@ -3,9 +3,7 @@ import numpy as np
 import random
 import time
 from openai import OpenAI
-import pyvista as pv
-from pyvista import examples
-from stpyvista import stpyvista
+
 
 
 
