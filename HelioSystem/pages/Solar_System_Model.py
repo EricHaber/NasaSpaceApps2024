@@ -5,7 +5,7 @@ import time
 from openai import OpenAI
 import pyvista as pv
 from pyvista import examples
-from panel import show
+import stpyvista
 import ephem
 import numpy as np
 import pyvista as pv
@@ -348,7 +348,7 @@ def visualize_planet_positions_and_orbits(positions, planet_colors):
     plotter.reset_camera()
 
     # Show the plot
-    show(plotter)
+    stpyvista(plotter)
 
 st.set_page_config(layout="wide")
 col1, col2 = st.columns(2)
