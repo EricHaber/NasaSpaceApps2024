@@ -3,3 +3,4 @@ openai
 stpyvista
 ephem
 vtk
+trame-vtk
