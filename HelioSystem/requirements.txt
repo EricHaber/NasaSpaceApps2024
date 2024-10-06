@@ -22,5 +22,5 @@ trame-server
 trame-vtk
 trame-vuetify
 panel
-
+vtkmodules
  
