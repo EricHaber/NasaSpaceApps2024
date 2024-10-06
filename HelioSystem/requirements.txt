@@ -1,4 +1,5 @@
 pip
+numpy
 streamlit
 openai
 ephem
