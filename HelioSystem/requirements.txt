@@ -5,6 +5,7 @@ streamlit
 openai
 ephem
 requests
+panel>=1.4.1
 
 # VTK and related libraries
 pillow
