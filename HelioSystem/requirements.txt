@@ -3,7 +3,7 @@ numpy
 streamlit
 openai
 ephem
-vtk=8.1.2
+vtk
 numpy
 matplotlib
 panel>=1.4.1
