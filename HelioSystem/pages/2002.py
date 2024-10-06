@@ -6,8 +6,8 @@ from openai import OpenAI
 
 
 
-client = OpenAI(organization=st.secrets["organization"],
-                project=st.secrets["project"],)
+client = OpenAI(api_key = st.secrets["API_KEY"])
+
 
 
 
