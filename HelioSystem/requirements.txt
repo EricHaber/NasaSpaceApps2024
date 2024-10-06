@@ -9,6 +9,7 @@ panel>=1.4.1
 bokeh
 param
 pyvista
+pyvista[examples]
 stpyvista>=0.1.0
 geovista
 colorcet
