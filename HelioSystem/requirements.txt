@@ -6,7 +6,6 @@ ephem
 vtk
 numpy
 matplotlib
-panel>=1.4.1
 bokeh
 param
 pyvista
