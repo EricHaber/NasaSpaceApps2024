@@ -26,7 +26,7 @@ st.image("HelioSystem/images/Noel.jpeg", width=200, caption="Noël Santiago Bria
 st.image("HelioSystem/images/Eric.jpeg", width=200, caption="Eric Haber Florencio: Brazilian, born in the U.S.A. 18th October 2010. Coder, Designer")
 st.image("HelioSystem/images/Lilian.jpeg", width=200, caption="Lilian Tillie Ronzon: French, born 8th November 2011. Coder, Presenter")
 st.image("HelioSystem/images/Pablo.jpeg", width=200, caption="Pablo Almagro González: Spanish, born in China 11th July 2010. Designer, Coder and Organizer")
-st.image("HelioSystem/images/Andrew.jpeg", width=200, caption="Andrés Almagro González: Spanish, born in China 12th December 2011. Designer, Presenter
+st.image("HelioSystem/images/Andrew.jpeg", width=200, caption="Andrés Almagro González: Spanish, born in China 12th December 2011. Designer, Presenter")
 st.image("HelioSystem/images/Baltasar.jpeg", width=200, caption="Baltasar García Machado: Spanish, born 10th January 2011. Presenter")
  
 st.header("Sources")
