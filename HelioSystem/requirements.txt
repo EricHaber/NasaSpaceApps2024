@@ -14,7 +14,7 @@ scooby
 cmocean
 colorcet
 meshio
-vtk
+vtk==9.2.6
 pyvista
 vtk.modules  # Only if required, but generally not necessary
 stpyvista
